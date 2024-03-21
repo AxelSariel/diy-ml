@@ -70,3 +70,9 @@ pip install -r requirements.txt
 ```
 python server.py
 ```
+
+## Docker Run
+1. Run the docker container
+```
+docker compose up --build
+```
