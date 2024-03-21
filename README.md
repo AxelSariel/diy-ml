@@ -72,7 +72,12 @@ python server.py
 ```
 
 ## Docker Run
-1. Run the docker container
+1. Build the docker image
 ```
-docker compose up --build
+docker build -t diyml .
+```
+
+2. Run the docker container
+```
+docker rum diyml
 ```
