@@ -81,3 +81,14 @@ docker build -t diyml .
 ```
 docker rum diyml
 ```
+
+### Export Docker Image
+1. Export image
+```
+docker save -o diyml.tar diyml
+```
+
+2. Import image on another computer
+```
+docker load -i diyml.tar
+```
