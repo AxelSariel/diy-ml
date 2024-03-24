@@ -1,6 +1,10 @@
 from flask import Flask, request, jsonify
+from pymongo import MongoClient
+from bson import json_util
 
 app = Flask(__name__)
+client = MongoClient('localhost', 27017)
+db = client.diyml
 
 @app.route('/')
 def index():
@@ -9,6 +13,11 @@ def index():
     })
 
 # Users
+@app.route('/diyml/users', methods=['GET'])
+def users_get():
+    users = db.users.find()
+    return jsonify(json_util.dumps(users))
+
 @app.route('/diyml/users/create', methods=['POST'])
 def users_create():
     input = request.get_json
