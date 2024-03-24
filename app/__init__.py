@@ -1,13 +1,12 @@
 from flask import Flask
 from pymongo import MongoClient
-
-MONGO_URI = 'mongodb://localhost:27017/diyml'
+from config import Config
 
 def create_app(mongo=None):
     app = Flask(__name__)
-    app.config['MONGO_URI'] = MONGO_URI
+    app.config.from_object(Config)
     if mongo is None:
-        mongo = MongoClient(MONGO_URI)
+        mongo = MongoClient(Config.MONGO_URI)
     app.mongo = mongo
     register_blueprints(app)
     return app
