@@ -15,5 +15,5 @@ def client(app):
     return app.test_client()
 
 @pytest.fixture
-def mongo():
-    return MongoClient(Config.MONGO_URI)
+def db(app):
+    return app.mongo.diyml
