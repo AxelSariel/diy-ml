@@ -3,6 +3,8 @@ DIY ML API Service for EC530
 
 DIY ML is an API to train, test, and deploy ML models.
 
+Future implementation will include actual ML training using https://auto.gluon.ai/stable/index.html
+
 # Screenshots
 <img width="1440" alt="Screenshot 2024-05-05 at 9 21 07 PM" src="https://github.com/AxelSariel/diy-ml/assets/42160084/20bfc162-e567-4638-8e22-c4cc86ebbf56">
 
