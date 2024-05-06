@@ -3,6 +3,14 @@ DIY ML API Service for EC530
 
 DIY ML is an API to train, test, and deploy ML models.
 
+# Screenshots
+<img width="1440" alt="Screenshot 2024-05-05 at 9 21 07 PM" src="https://github.com/AxelSariel/diy-ml/assets/42160084/20bfc162-e567-4638-8e22-c4cc86ebbf56">
+
+<img width="1440" alt="Screenshot 2024-05-05 at 9 21 16 PM" src="https://github.com/AxelSariel/diy-ml/assets/42160084/f2363b6c-f823-41b2-b6bf-6739cade3fc6">
+
+
+
+
 # User Stories
 
 Below is a list of User Stories for reference, from the class slides
@@ -21,7 +29,7 @@ Below is a list of User Stories for reference, from the class slides
 - ALL APIs should be independent of the ML model and data
 - A project is associated with a user
 
-# Routes
+# Routes (some TODO)
 Endpoint                 Methods  Rule                                          
 -----------------------  -------  ----------------------------------------------
 datasets_create          POST     /diyml/datasets/create                        
@@ -68,7 +76,7 @@ pip install -r requirements.txt
 
 5. Run Server
 ```
-python server.py
+flask run
 ```
 
 ## Docker Run
